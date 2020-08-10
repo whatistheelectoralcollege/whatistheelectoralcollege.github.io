@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How much does your Vote count?</title>
+
+	<p>
+		The President of the United States is elected as determined by the rules set forth in the Constitution and subsequent Twelfth Amendment. The electoral college divides electors (or electoral votes) to each state roughly (not directly) proportional to population size. It is for this reason that larger, more populous states have more electoral votes and thus carry greater weight as a whole. However, some states with less electoral votes have significantly smaller population sizes. This discrepancy disproportionately favors some voters over others. The purpose of this page is to inform you, the viewer, how much your vote counts for as it relates to the US Presidential Election. If all people counted equally within the United States then with the U.S. population of 308,401,808 (as determined during the 2010 Census) and a total number of electoral votes of 538 it would take approximately 573,238 votes to count for one electoral vote. 
+	</p>
+	<p>
+		However more populous states typically get less electoral votes than they would if proportionally to their population. Similarly less populous states typically have greater representation than they would if proportional to their population. 
+	</p>
+	<p>
+		For example, Texas has a population of 25,145,561 (as determined during the 2010 Census) and a total number of electoral votes of 38. This means that in Texas it takes 661,726 votes to count for one electoral vote. Then if we look at Wyoming, the population of 563,626 (as determined during the 2010 Census) has 3 electoral votes. That means that in Wyoming it only takes 187,876 votes for one elector. So a person voting in Wyoming is counted for more than 3 times that of the average citizen and a person in Texas counts for less than an one average american citizen (by over 10%!)
+	</p>
+	<p>
+		Another example is in California, the state population of 37,254,523 with 55 electoral votes means that it takes 677,355 votes per elector but then Washington DC with 3 electoral votes and a population of 601,723 it only takes 200,575 votes for one electoral vote. So a person voting in Washington DC is counted for approximately 3 times that of the average citizen and a person in california counts for less than an average american citizen (by over 15%!)
+	</p>
+	<p>
+		Below you will find a sortable table of the states that have a say in the US Presidential Election. See if you can find your state and determine how much your vote will count in November. 
+	</p>
+
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p><strong>Click the headers to sort the table.</strong></p>
+<p>The first time you click, the sorting direction is ascending (A to Z).</p>
+<p>Click again, and the sorting direction will be descending (Z to A):</p>
+
+<table id="myTable">
+  <tr>
+   <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+    <th onclick="sortTable(0)">State</th>
+    <th onclick="sortTable(1)">Population</th>
+    <th onclick="sortTable(2)">Electoral Votes</th>
+    <th onclick="sortTable(3)">How much weight your vote carries</th>
+  </tr>
+  <tr>
+	<td>	Alabama	</td>	<td>	4779736	</td>	<td>	9	</td>	<td>	1.079377198	</td>																					  </tr>
+  <tr>
+   <td>	Alaska	</td>	<td>	710231	</td>	<td>	3	</td>	<td>	2.421342752	</td>
+  </tr>
+  <tr>
+ <td>	Arizona	</td>	<td>	6392017	</td>	<td>	11	</td>	<td>	0.9864825413	</td>																					
+  </tr>
+  <tr>
+<td>	Arkansas	</td>	<td>	2915918	</td>	<td>	6	</td>	<td>	1.179534324	</td>																					
+  </tr>
+  <tr>
+<td>	California	</td>	<td>	37254523	</td>	<td>	55	</td>	<td>	0.8462882714	</td>																					
+  </tr>
+  <tr>
+<td>	Colorado	</td>	<td>	5029196	</td>	<td>	9	</td>	<td>	1.02583754	</td>																					
+  </tr>
+  <tr>
+<td>	Connecticut	</td>	<td>	3574097	</td>	<td>	7	</td>	<td>	1.122706779	</td>																					
+  </tr>
+  <tr>
+<td>	Delaware	</td>	<td>	897934	</td>	<td>	3	</td>	<td>	1.915188292	</td>																					
+  </tr>
+  <tr>
+		<td>	Florida	</td>	<td>	18801310	</td>	<td>	29	</td>	<td>	0.8841878187	</td>																					
+  </tr>
+  <tr>
+		<td>	Georgia	</td>	<td>	9687653	</td>	<td>	16	</td>	<td>	0.9467516003	</td>																					
+  </tr>
+  <tr>
+		<td>	Hawaii	</td>	<td>	1360301	</td>	<td>	4	</td>	<td>	1.68561976	</td>																					
+  </tr>
+    <tr>
+		<td>	Idaho	</td>	<td>	1567582	</td>	<td>	4	</td>	<td>	1.462730655	</td>																					
+  </tr>
+    <tr>
+		<td>	Illinois	</td>	<td>	12830632	</td>	<td>	20	</td>	<td>	0.8935453239	</td>																					
+  </tr>
+    <tr>
+		<td>	Indiana	</td>	<td>	6483802	</td>	<td>	11	</td>	<td>	0.972517849	</td>																					
+  </tr>
+    <tr>
+		<td>	Iowa	</td>	<td>	3046355	</td>	<td>	6	</td>	<td>	1.129029732	</td>																					
+  </tr>
+    <tr>
+		<td>	Kansas	</td>	<td>	2853118	</td>	<td>	6	</td>	<td>	1.205497062	</td>																					
+  </tr>
+    <tr>
+		<td>	Kentucky	</td>	<td>	4339367	</td>	<td>	8	</td>	<td>	1.056813238	</td>																					
+  </tr>
+    <tr>
+		<td>	Louisiana	</td>	<td>	4533372	</td>	<td>	8	</td>	<td>	1.011587068	</td>																					
+  </tr>
+    <tr>
+		<td>	Maine	</td>	<td>	1328361	</td>	<td>	4	</td>	<td>	1.726149929	</td>																					
+  </tr>
+    <tr>
+		<td>	Maryland	</td>	<td>	5773552	</td>	<td>	10	</td>	<td>	0.9928681015	</td>																					
+  </tr>
+    <tr>
+		<td>	Massachusetts	</td>	<td>	6547629	</td>	<td>	11	</td>	<td>	0.9630376392	</td>																					
+  </tr>
+    <tr>
+		<td>	Michigan	</td>	<td>	9883640	</td>	<td>	16	</td>	<td>	0.9279780507	</td>																					
+  </tr>
+    <tr>
+		<td>	Minnesota	</td>	<td>	5303925	</td>	<td>	10	</td>	<td>	1.080779915	</td>																					
+  </tr>
+    <tr>
+		<td>	Mississippi	</td>	<td>	2967297	</td>	<td>	6	</td>	<td>	1.159110587	</td>																					
+  </tr>
+    <tr>
+		<td>	Missouri	</td>	<td>	5988927	</td>	<td>	10	</td>	<td>	0.9571623787	</td>																					
+  </tr>
+    <tr>
+		<td>	Montana	</td>	<td>	989415	</td>	<td>	3	</td>	<td>	1.738110584	</td>																					
+  </tr>
+    <tr>
+		<td>	Nebraska	</td>	<td>	1826341	</td>	<td>	5	</td>	<td>	1.569360709	</td>																					
+  </tr>
+    <tr>
+		<td>	Nevada	</td>	<td>	2700551	</td>	<td>	6	</td>	<td>	1.273601338	</td>																					
+  </tr>
+    <tr>
+		<td>	New Hampshire	</td>	<td>	1316470	</td>	<td>	4	</td>	<td>	1.741741358	</td>																					
+  </tr>
+    <tr>
+		<td>	New Jersey	</td>	<td>	8791894	</td>	<td>	14	</td>	<td>	0.9128096697	</td>																					
+  </tr>
+    <tr>
+		<td>	New Mexico	</td>	<td>	2059179	</td>	<td>	5	</td>	<td>	1.39190804	</td>																					
+  </tr>
+    <tr>
+		<td>	New York	</td>	<td>	19378102	</td>	<td>	29	</td>	<td>	0.8578698408	</td>																					
+  </tr>
+    <tr>
+		<td>	North Carolina	</td>	<td>	9535483	</td>	<td>	15	</td>	<td>	0.9017438781	</td>																					
+  </tr>
+    <tr>
+		<td>	North Dakota	</td>	<td>	672591	</td>	<td>	3	</td>	<td>	2.5568476	</td>																					
+  </tr>
+    <tr>
+		<td>	Ohio	</td>	<td>	11536504	</td>	<td>	18	</td>	<td>	0.894402334	</td>																					
+  </tr>
+    <tr>
+		<td>	Oklahoma	</td>	<td>	3751351	</td>	<td>	7	</td>	<td>	1.069658086	</td>																					
+  </tr>
+    <tr>
+		<td>	Oregon	</td>	<td>	3831074	</td>	<td>	7	</td>	<td>	1.047398962	</td>																					
+  </tr>
+    <tr>
+		<td>	Pennsylvania	</td>	<td>	12702379	</td>	<td>	20	</td>	<td>	0.9025672456	</td>																					
+  </tr>
+    <tr>
+		<td>	Rhode Island	</td>	<td>	1052567	</td>	<td>	4	</td>	<td>	2.17843638	</td>																					
+  </tr>
+    <tr>
+		<td>	South Carolina	</td>	<td>	4625364	</td>	<td>	9	</td>	<td>	1.115401523	</td>																					
+  </tr>
+    <tr>
+		<td>	South Dakota	</td>	<td>	814180	</td>	<td>	3	</td>	<td>	2.112202073	</td>																					
+  </tr>
+    <tr>
+		<td>	Tennessee	</td>	<td>	6346105	</td>	<td>	11	</td>	<td>	0.9936194208	</td>																					
+  </tr>
+    <tr>
+		<td>	Texas	</td>	<td>	25145561	</td>	<td>	38	</td>	<td>	0.8662772459	</td>																					
+  </tr>
+    <tr>
+<td>	Utah	</td>	<td>	2763885	</td>	<td>	6	</td>	<td>	1.244416959	</td>																					  </tr>
+    <tr>
+		<td>	Vermont	</td>	<td>	625741	</td>	<td>	3	</td>	<td>	2.748281931	</td>																					
+  </tr>
+    <tr>
+		<td>	Virginia	</td>	<td>	8001024	</td>	<td>	13	</td>	<td>	0.931391819	</td>																					
+  </tr>
+    <tr>
+		<td>	Washington	</td>	<td>	6724540	</td>	<td>	12	</td>	<td>	1.022947404	</td>																					
+  </tr>
+    <tr>
+		<td>	West Virginia	</td>	<td>	1852994	</td>	<td>	5	</td>	<td>	1.546787419	</td>																					
+  </tr>
+    <tr>
+		<td>	Wisconsin	</td>	<td>	5686986	</td>	<td>	10	</td>	<td>	1.007981313	</td>																					
+  </tr>
+    <tr>
+		<td>	Wyoming	</td>	<td>	563626	</td>	<td>	3	</td>	<td>	3.051159251	</td>																					
+  </tr>
+  <tr>
+		<td>	DC	</td>	<td>	601723	</td>	<td>	3	</td>	<td>	2.857980639	</td>																																									
+  </tr>
+
+</table>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, test, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+
+  											// 		rows = table.rows;
+  											// 		test = rows[1].getElementsByTagName("TD")[n];
+  											// 		var tester = 0;
+  											// 		tester = test.innerHTML;
+  											// 		if(isNaN(tester)){
+  											// 			console.log("its a letter");
+  											// 		}
+  											// 		console.log(tester);
+													// if(isNaN(tester)){
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+  }
+  // else{
+  // 	var table, rows, switching, i, x, y, shouldSwitch;
+  // 	table = document.getElementById("myTable");
+  // 	switching = true;
+  // 	/*Make a loop that will continue until
+  // 	no switching has been done:*/
+  // 	while (switching) {
+  //   //start by saying: no switching is done:
+  //   switching = false;
+  //   rows = table.rows;
+  //   /*Loop through all table rows (except the
+  //   first, which contains table headers):*/
+  //   for (i = 1; i < (rows.length - 1); i++) {
+  //     //start by saying there should be no switching:
+  //     shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+  //     x = rows[i].getElementsByTagName("TD")[0];
+  //     y = rows[i + 1].getElementsByTagName("TD")[0];
+  //     //check if the two rows should switch place:
+  //     if (Number(x.innerHTML) > Number(y.innerHTML)) {
+  //       //if so, mark as a switch and break the loop:
+  //       shouldSwitch = true;
+  //       break;
+  //     }
+  //   }
+  //   if (shouldSwitch) {
+  //     /*If a switch has been marked, make the switch
+  //     and mark that a switch has been done:*/
+  //     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+  //     switching = true;
+  //   }
+  // }
+  // }
+</script>
+
+
+</body>
+</html>
